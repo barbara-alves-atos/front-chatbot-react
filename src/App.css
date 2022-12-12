@@ -1,38 +1,106 @@
+background{
+  width: 100%;
+  height: 100%;
+}
+
+
 .App {
   text-align: center;
+  border: 3px solid rgb(188, 188, 191);
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+  box-shadow: 5px;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  margin-top: 10px;
+  height: 50%;
+  width: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.direct-chat-messages {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  padding: 10px;
+  overflow: auto;
+  height: 80%;
+}
+
+.direct-chat-messages,
+.direct-chat-contacts {
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  -moz-transition: -moz-transform .5s ease-in-out;
+  -o-transition: -o-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out
+}
+
+.button {
+  box-shadow: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: #6e6e6e;
+  font-size: 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+  display: table-footer-group;
+  position: relative;
+
+}
+
+.button:hover {
+  box-shadow: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: #0073ae;
+  background-color: rgb(170, 211, 222);
+
+
+}
+
+.logo-atos {
+  width: 20%;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+
+.ui.form textarea {
+  margin-bottom: 5%;
+  -webkit-appearance: none;
+  tap-highlight-color: rgba(255, 255, 255, 0);
+  padding: .78571429em 1em;
+  background: #bddceb;
+  border: 1px solid rgba(34, 36, 38, .15);
+  outline: 0;
+  color: rgba(0, 0, 0, .87);
+  border-radius: .28571429rem;
+  box-shadow: 0 0 0 0 transparent inset;
+  transition: color .1s ease, border-color .1s ease;
+  line-height: 5px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 7%;
+
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #ffffff;
+  padding-top: 3%;
+  padding-bottom: 35%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
